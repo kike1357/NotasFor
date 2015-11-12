@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Examen {
     float i=0,ac=0;
-    float nota1,nota2,nota3;
+    float nota,nota1,nota2,nota3;
     String alumno;
     
     public String Alumno() {
@@ -21,20 +21,15 @@ public class Examen {
         return JOptionPane.showInputDialog("Introducir alumno : ");
     }
     
-    public float getNota1(){
-    return Float.parseFloat(JOptionPane.showInputDialog("Introducir primera nota :"));
+    public float getNota(){
+    return Float.parseFloat(JOptionPane.showInputDialog("Introducir  nota :"));
     
     }
-    public float getNota2(){
-        return Float.parseFloat(JOptionPane.showInputDialog("Introducir segunda nota :"));
-    }
-    public float getNota3(){
-    return Float.parseFloat(JOptionPane.showInputDialog("Introducir tercera nota :"));
-    }
+    
     public float calcularNotaMedia(float nota1,float nota2,float nota3){
-        this.nota1=nota1;
-        this.nota2=nota2;
-        this.nota3=nota3;
+        this.nota1=nota;
+        this.nota2=nota;
+        this.nota3=nota;
         return ((nota1+nota2+nota3)/3);
     }
      public void NotaMedia (float calcularNotaMedia,String Alumno){
